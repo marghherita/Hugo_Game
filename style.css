@@ -1,0 +1,78 @@
+   
+.game {
+    height: 200px;
+    width: 600px;
+
+    margin: auto;
+    background-image: url(img/sfondo.gif);
+    display: flex;
+    
+    flex-direction: row;
+    z-index: 0;
+}
+
+.character {
+    width: 50px;
+    height: 50px;
+
+    background-image: url(img/personaggio_app.gif );
+    background-size: 50px 50px;
+    position: relative;
+    left: 20px;
+    margin-top: 150px;
+    bottom: 0;
+}
+
+.character-jumping {
+
+    width: 50px;
+    height: 50px;
+    background-image: url(img/personaggio-jump.png );
+    background-size: 50px 50px;
+
+    position: relative;
+    left: 20px;
+    margin-top: 150px;
+    bottom: 0px;
+}
+
+.character-stop {
+
+    width: 50px;
+    height: 50px;
+    background-image: url(img/personaggio-13.png );
+    background-size: 50px 50px;
+
+    position: relative;
+    left: 20px;
+    margin-top: 150px;
+    bottom: 0px;
+}
+
+
+/* ANIMAZIONE CSS */
+
+.obstacle {
+    width: 40px;
+    height: 40px;
+    
+    position: relative;
+    top: 160px;
+    left: 500px;
+    
+    background-image: url(/img/ostacolo.png);
+    background-size: 40px 40px;
+
+    animation: block 2s infinite linear;
+}
+
+
+@keyframes block {
+    0% {
+        left: 500px;
+    }
+
+    100% {
+        left: -60px;
+    }
+}
